@@ -1,12 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const booksRouter = require("./routers/books");
-const app = express();
+const books = require("./routers/books");
 
+const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
-app.use(booksRouter);
+app.use(books);
 
 app.get("/", (req, res) => {
   res.send("Hello, World!");
