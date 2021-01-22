@@ -8,14 +8,14 @@ const {
   list,
 } = require("../../controllers/books");
 
-router.get("/books", list);
+router.get("/", list);
 
-router.get("/books/:id", show);
+router.get("/:id", show);
 
-router.post("/books", create);
+router.post("/", create);
 
-router.put("/books/:id", update);
+router.put("/:id", update);
 
-router.delete("/books/:id", remove);
+router.delete("/:id", remove);
 
 module.exports = router;

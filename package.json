@@ -1,8 +1,12 @@
 {
-  "name": "books-api-rest",
+  "name": "booksdb",
   "version": "1.0.0",
-  "description": "",
+  "description": "A practice in full stack hostin",
   "main": "index.js",
+  "repository": {
+  "type": "git",
+  "url": "git@github.com:mmhuntsberry/books-api-rest.git"
+  },
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
