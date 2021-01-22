@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(books);
 
 app.get("/", (req, res) => {
-  res.send("Hello, World!");
+  res.send("Welcome to the books api");
 });
 
 app.listen(PORT, console.log(`I am listening on port ${5000}`));

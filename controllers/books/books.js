@@ -1,6 +1,6 @@
 const express = require("express");
 const mysql = require("mysql");
-const pool = require("../sql/connection");
+const pool = require("../../sql/connection");
 
 const list = (req, res) => {
   pool.query("SELECT * FROM book", (err, rows) => {
